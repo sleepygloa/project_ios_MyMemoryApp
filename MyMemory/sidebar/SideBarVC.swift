@@ -14,7 +14,7 @@ class SideBarVC : UITableViewController{
     let profileImage = UIImageView() //프로필 이미지
     
     //목록 데이터 배열
-    let titles = ["새글 작성하기", "친구 새글", "달력으로 보기", "공지사항", "통계", "계정 관리"]
+    let titles = ["글 목록", "친구 새글", "달력으로 보기", "공지사항", "통계", "계정 관리"]
     
     //아이콘 데이터 배열
     let icons = [
@@ -95,7 +95,7 @@ class SideBarVC : UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 { //선택된 행이 새글 작성 메뉴일 때
-            let uv = self.storyboard?.instantiateViewController(withIdentifier: "MemoForm")
+            let uv = self.storyboard?.instantiateViewController(withIdentifier: "MemoList")
             let target = self.revealViewController().frontViewController as! UINavigationController
             target.pushViewController(uv!, animated: true)
             self.revealViewController().revealToggle(self)
@@ -104,7 +104,7 @@ class SideBarVC : UITableViewController{
             let target = self.revealViewController().frontViewController as! UINavigationController
             target.pushViewController(uv!, animated: true)
             self.revealViewController().revealToggle(self)
-//            uv?.modalPresentationStyle = .automatic
+//            uv?.modalPresentationStyle = .fullScreen
 //            self.present(uv!, animated: true) {
 //                self.revealViewController().revealToggle(self)
 //            }

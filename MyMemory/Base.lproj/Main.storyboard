@@ -11,7 +11,7 @@
         <!--목록-->
         <scene sceneID="ps1-Bs-JvZ">
             <objects>
-                <tableViewController id="FXl-H1-yeg" customClass="MemoListVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MemoList" id="FXl-H1-yeg" customClass="MemoListVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="j9E-vI-tmF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,7 +183,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4T-Mn-9Gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182.60869565217394" y="738.61607142857144"/>
+            <point key="canvasLocation" x="465" y="114"/>
         </scene>
         <!--메모 작성-->
         <scene sceneID="BsY-ei-aVs">
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YE-Lm-fAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="739"/>
+            <point key="canvasLocation" x="1304" y="-228"/>
         </scene>
         <!--상세 화면-->
         <scene sceneID="Gmo-Se-aJg">
@@ -296,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgA-8L-a4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="1438"/>
+            <point key="canvasLocation" x="1303" y="445"/>
         </scene>
         <!--프로필-->
         <scene sceneID="9cV-Rg-RDD">
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HS-z0-eQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933" y="1438"/>
+            <point key="canvasLocation" x="464" y="1135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KHB-Gu-OhS">
@@ -344,7 +344,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8T3-Qp-rAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="739"/>
+            <point key="canvasLocation" x="-267" y="114"/>
         </scene>
         <!--Side BarVC-->
         <scene sceneID="Fhh-Hj-Jls">
@@ -396,6 +396,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5Iu-4v-dhb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wI-Rl-g6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" hidesBarsWhenKeyboardAppears="YES" hidesBarsWhenVerticallyCompact="YES" id="8eX-nH-z81" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xod-8a-iNg">
@@ -407,9 +408,8 @@
                         <segue destination="X24-8k-FYG" kind="relationship" relationship="rootViewController" id="PU5-34-Ydg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9wI-Rl-g6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="1438"/>
+            <point key="canvasLocation" x="-268" y="1136"/>
         </scene>
         <!--신규 계정 등록 -->
         <scene sceneID="s9X-jh-OLC">
@@ -464,7 +464,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWl-aW-IKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="s0o-FI-mza" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2691" y="1438"/>
+            <point key="canvasLocation" x="1303" y="1134"/>
         </scene>
     </scenes>
     <resources>

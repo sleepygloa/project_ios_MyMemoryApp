@@ -174,9 +174,21 @@ class ProfileVC : UIViewController, UITableViewDelegate, UITableViewDataSource, 
     override func viewDidLoad() {
         self.navigationItem.title = "프로필"
         
-        //뒤로 가기 버튼 처리
-        let backBtn = UIBarButtonItem(title: "닫기", style: .plain, target: self, action: #selector(close(_:)))
-        self.navigationItem.leftBarButtonItem = backBtn
+        //SWRevealViewController 라이브러리의 revealViewController 객체를 읽어온다
+        if let revealVC = self.revealViewController() {
+            
+            //바 버튼 아이템 객체를 정의한다
+            let btn = UIBarButtonItem()
+            btn.image = UIImage(named: "sidemenu.png")
+            btn.target = revealVC //버튼 클릭시 호출할 메소드가 정의된 객체 지정
+            btn.action = #selector(revealVC.revealToggle(_:)) //버튼 클릭 시 revealToggle(_:) 호출
+            
+            //정의된 바 버튼을 네비게이션 바의 왼쪽 아이템으로 등록한다
+            self.navigationItem.leftBarButtonItem = btn
+            
+            //제스처 객체를 뷰에 추가한다
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
         
 
         
