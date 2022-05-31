@@ -12,9 +12,7 @@ ref : 꼼꼼한 재은씨 실전편 메모장앱
  3. sideBar 기능
  4. API 통신
 
-
-# Update
-1. 사용자 프로필 화면 접근시 modal 내 navigation item 이 표현이 안됨
+## Update
 
 ## Bug Fix
 
@@ -23,5 +21,6 @@ ref : 꼼꼼한 재은씨 실전편 메모장앱
 
 ## Issue List
 1. 회원등록 후 사진 수정시 토큰이 만료되었습니다. 메시지 뜸
+2. 불필요한 사이드바의 메뉴들이 존재함.
 
 
